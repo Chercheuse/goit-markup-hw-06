@@ -733,3 +733,33 @@ textarea::placeholder {
 .terms-conditions {
   color: #4d5ae5;
 }
+
+
+@media (min-width:320px) {
+
+
+}
+
+@media (min-width:768px) {
+
+
+}
+
+@media (min-width:1158px) {
+
+
+}
+
+@media (min-resolution:96dpi) {
+ img {
+  
+ }
+
+}
+
+@media (min-resolution:192dpi) {
+ img {
+
+ }
+  
+}
