@@ -909,6 +909,9 @@ textarea::placeholder {
 }
 
 @media (min-width: 1158px) and (max-width: 1440px) {
+  .container {
+    width:1158px;
+  }
   .contact-list {
     display: flex;
     gap: 40px;
