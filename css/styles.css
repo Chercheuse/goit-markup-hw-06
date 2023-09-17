@@ -734,32 +734,31 @@ textarea::placeholder {
   color: #4d5ae5;
 }
 
-
-@media (min-width:320px) {
-
-
+@media (min-width: 320px) {
 }
 
-@media (min-width:768px) {
-
-
+@media (min-width: 768px) {
 }
 
-@media (min-width:1158px) {
-
-
+@media (min-width: 1158px) {
 }
 
-@media (min-resolution:96dpi) {
- img {
-  
- }
-
+@media (min-resolution: 96dpi) {
+  .main-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/main-background-image.jpg");
+  }
 }
 
-@media (min-resolution:192dpi) {
- img {
-
- }
-  
+@media (min-resolution: 192dpi) {
+  .main-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/main-background-image200.jpg");
+  }
 }
