@@ -667,10 +667,6 @@ textarea::placeholder {
     margin: 0 auto;
   }
 
-  /* .modal-window-container {
-    display: none;
-  } */
-
   img {
     width: 100%;
     display: block;
@@ -712,10 +708,6 @@ textarea::placeholder {
   .social-media_title,
   .form-title {
     text-align: center;
-  }
-
-  .modal-window-container {
-    display: none;
   }
 
   .footer-logo {
