@@ -106,8 +106,6 @@ li {
 .feature-title,
 .team-title,
 .portfolio-title {
-  font-weight: 500;
-  font-size: 20px;
   color: #2e2f42;
   margin-bottom: 8px;
   font-family: Roboto;
@@ -640,37 +638,87 @@ textarea::placeholder {
     /* width: 320px; */
   }
 
+  .header {
+    border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    height: 56px;
+  }
+
+  .burger-menu {
+    fill: #2f2f37;
+  }
+  .header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  .company-logo {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    margin-right: 76px;
+    text-decoration: none;
+    margin: 17.5px 0 16px;
+  }
+
+  .logo-part {
+    color: #2e2f42;
+  }
+
   .svg-icon {
     display: none;
   }
 
   .feature-list,
   .team-list,
-  .portfolio-list,
   .footer-container {
     display: flex;
     flex-wrap: wrap;
     gap: 72px;
+    justify-content: center;
+  }
+
+  .features {
+    padding: 96px 16px;
+  }
+
+  .team-section,
+  .portfolio-section {
+   padding: 96px 0;
   }
 
   .feature-list_item,
-  .team-card,
-  .portfolio-list_item {
+  .team-card  {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 264px;
     justify-content: center;
     gap: 8px;
   }
 
-  .feature-title {
-    margin: 0 auto;
+  .portfolio-list_item {
+    width: 288px;
+
   }
 
-  img {
-    width: 100%;
-    display: block;
+  .feature-title {
+    margin: 0 auto;
+    font-size: 36px;
   }
+
+  .feature-desc {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+  }
+
 
   .main-title {
     font-size: 36px;
@@ -686,6 +734,7 @@ textarea::placeholder {
     flex-wrap: wrap;
   }
 
+  
   .footer-form {
     display: flex;
     flex-direction: column;
@@ -709,6 +758,11 @@ textarea::placeholder {
   .form-title {
     text-align: center;
   }
+  .footer-wrapper-logo {
+    display: flex;
+    flex-direction: column;
+  }
+
 
   .footer-logo {
     margin: 0 auto 16px;
@@ -725,19 +779,13 @@ textarea::placeholder {
     display: none;
   }
 
-  .burger-menu {
-    fill: #2f2f37;
-  }
-
-  .header_container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
   .modal-window {
     width: 288px;
     padding: 72px 16px 16px 16px;
+  }
+
+  .modal-window-container {
+    display: none;
   }
 
   .terms-conditions {
@@ -902,7 +950,7 @@ textarea::placeholder {
 
 @media (min-width: 1158px) and (max-width: 1440px) {
   .container {
-    width:1158px;
+    width: 1158px;
   }
   .contact-list {
     display: flex;
