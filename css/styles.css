@@ -45,24 +45,6 @@ li {
   color: #2e2f42;
 }
 
-.main-section {
-  background-color: #2e2f42;
-  padding: 188px 0 188px;
-  display: flex;
-  flex-direction: column;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url("../images/main-background-image.jpg");
-  object-fit: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  max-width: 1440px;
-  background-position: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .inner-container {
   display: flex;
   flex-direction: column;
@@ -118,7 +100,6 @@ li {
 .feature-desc,
 .team-desc,
 .portfolio-desc {
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
@@ -229,7 +210,6 @@ li {
 
 .team-card {
   background-color: #ffffff;
-  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -249,13 +229,6 @@ li {
 
 .footer-logo_part {
   color: #f4f4fd;
-}
-
-.container {
-  margin: 0 auto;
-  padding: 0 15px;
-  min-width: 320px;
-  max-width: 1440px;
 }
 
 .features {
@@ -278,14 +251,6 @@ li {
 .feature-list {
   display: flex;
   gap: 24px;
-}
-
-.feature-title {
-  margin-bottom: 8px;
-}
-
-.team-section {
-  padding: 120px 0;
 }
 
 .team-section_title {
@@ -335,11 +300,6 @@ li {
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
-}
-
-.footer-container {
-  display: flex;
-  align-items: baseline;
 }
 
 .icon {
@@ -622,11 +582,10 @@ textarea::placeholder {
 }
 
 @media (min-width: 320px) {
-
   .container {
     margin: 0 auto;
+    max-width: 428px;
     padding: 0 15px;
-    /* width: 320px; */
   }
 
   .header {
@@ -666,6 +625,24 @@ textarea::placeholder {
     display: none;
   }
 
+  .main-section {
+    background-color: #2e2f42;
+    padding: 112px 0;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/main-background-image.jpg");
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1440px;
+    background-position: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
   .feature-list,
   .team-list,
   .footer-container {
@@ -689,7 +666,6 @@ textarea::placeholder {
   .team-card {
     display: flex;
     flex-direction: column;
-    width: 264px;
     justify-content: center;
     gap: 8px;
   }
@@ -702,6 +678,7 @@ textarea::placeholder {
     margin: 0 auto;
     font-size: 36px;
     line-height: 40px;
+    font-weight: 700;
   }
 
   .feature-desc {
@@ -712,6 +689,7 @@ textarea::placeholder {
 
   .main-title {
     font-size: 36px;
+    padding: 0 48px;
   }
 
   .portfolio-list {
@@ -721,7 +699,6 @@ textarea::placeholder {
   }
 
   .footer-container {
-    display: flex;
     flex-wrap: wrap;
   }
 
@@ -773,16 +750,24 @@ textarea::placeholder {
     padding: 72px 16px 16px 16px;
   }
 
-  /* .modal-window-container {
+  .modal-window-container {
     display: none;
-  } */
+  }
 
   .terms-conditions {
     margin-left: 24px;
   }
+
+  .footer {
+    padding: 96px 0;
+  }
 }
 
 @media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 16px;
+  }
   .header {
     height: 72px;
   }
@@ -802,7 +787,7 @@ textarea::placeholder {
     color: #404bbf;
   }
 
-  .current:after {
+  .current::after {
     position: absolute;
     content: "";
     left: 0;
@@ -818,7 +803,7 @@ textarea::placeholder {
   .nav-list_item:active::after {
     width: 100%;
     opacity: 1;
-    transform: translateX(0%);
+    transform: translateY(0%);
   }
 
   .nav-list_item {
@@ -899,13 +884,10 @@ textarea::placeholder {
 
   .feature-title {
     margin: 0;
-    line-height: 40px;
     letter-spacing: 0.72px;
-    font-weight: 700;
   }
 
   .feature-desc {
-    font-weight: 500;
     width: 356px;
   }
 
@@ -917,14 +899,13 @@ textarea::placeholder {
     width: 356px;
   }
 
-  .team-card {
-    width: 264px;
+  .footer {
+    padding: 100px 0;
   }
 
   .footer-container {
     display: flex;
     flex-wrap: wrap;
-    width: 768px;
     justify-content: flex-start;
     row-gap: 72px;
     column-gap: 24px;
@@ -956,6 +937,7 @@ textarea::placeholder {
   .main-title {
     font-size: 56px;
     margin-bottom: 36px;
+    padding: 0;
   }
 
   .modal-window {
@@ -970,7 +952,7 @@ textarea::placeholder {
 
 @media (min-width: 1158px) and (max-width: 1440px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
   }
   .contact-list {
     display: flex;
@@ -982,6 +964,20 @@ textarea::placeholder {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.32px;
+  }
+
+  .nav-bar {
+    gap: 76px;
+  }
+
+  .main-section {
+    padding: 188px 0;
+  }
+
+  .team-section,
+  .portfolio-section,
+  .features {
+    padding: 120px 0;
   }
 
   .feature-list,
@@ -1000,7 +996,6 @@ textarea::placeholder {
   }
 
   .feature-desc {
-    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     width: 264px;
@@ -1028,19 +1023,13 @@ textarea::placeholder {
   }
 
   .social-media {
-    margin-right: 80px;
+    margin-left: 40px;
   }
 
   .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 1158px;
-    row-gap: 72px;
-    column-gap: 24px;
-    flex-direction: row;
-    align-items: flex-start;
+    gap: 80px;
   }
+
 }
 
 @media (min-resolution: 96dpi) {
